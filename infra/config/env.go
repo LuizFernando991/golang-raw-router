@@ -5,13 +5,7 @@ import "github.com/spf13/viper"
 var env *Envconfig
 
 type Envconfig struct {
-	API_PORT    string `mapstructure:"API_PORT"`
-	DB_USER     string `mapstructure:"DB_USER"`
-	DB_PASSWORD string `mapstructure:"DB_PASSWORD"`
-	DB_DATABASE string `mapstructure:"DB_DATABASE"`
-	DB_HOST     string `mapstructure:"DB_HOST"`
-	DB_PORT     string `mapstructure:"DB_PORT"`
-	ENV         string `mapstructure:"ENVIRONMENT"`
+	API_PORT string `mapstructure:"API_PORT"`
 }
 
 func GetEnvConfig() *Envconfig {
